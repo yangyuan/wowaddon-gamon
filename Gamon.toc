@@ -1,7 +1,7 @@
-## Interface: 50400
+## Interface: 60000
 ## Title: Gamon
-## Notes: Happy Birthday to Kevin Shaw, http://www.kevinsj.com/
+## Notes: ......
 
 Gamon.lua
 Interrupt.lua
-PetBattle.lua
+Collaboration.lua

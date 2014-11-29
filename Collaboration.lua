@@ -29,7 +29,7 @@ local function eventHandler(self, event, ...)
 			if num1 == num2 then
 				SendChatMessage(MESSAGE_QP..message..MESSAGE_QC, (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and "INSTANCE_CHAT") or (IsInRaid() and "RAID") or "PARTY");
 			else
-				SendChatMessage(MESSAGE_QP..message, (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and "INSTANCE_CHAT") or (IsInRaid() and "RAID") or "PARTY");
+				-- SendChatMessage(MESSAGE_QP..message, (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and "INSTANCE_CHAT") or (IsInRaid() and "RAID") or "PARTY");
 			end
 		elseif string.find(message, REGEX_QC) then
 			SendChatMessage(MESSAGE_QP..message, (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and "INSTANCE_CHAT") or (IsInRaid() and "RAID") or "PARTY");

@@ -16,7 +16,7 @@ local function eventHandler(self, event, ...)
 		else
 			extra = "喵！"
 		end
-		SendChatMessage("华丽丽地用"..GetSpellLink(spellID).."打断"..destName.."的"..GetSpellLink(extraSpellID).."，"..extra, "SAY", nil, nil)
+		SendChatMessage("用"..GetSpellLink(spellID).."打断"..destName.."的"..GetSpellLink(extraSpellID).."，"..extra, "SAY", nil, nil)
 	end
 	if (event_extra == "SPELL_DISPEL") and (sourceGUID == UnitGUID("pet") or sourceGUID == UnitGUID("player")) then
 		local x = math.random(2)
@@ -29,7 +29,7 @@ local function eventHandler(self, event, ...)
 			extra = "喵！"
 		end
 		if not (spellID == 32375) then
-			SendChatMessage("华丽丽地用"..GetSpellLink(spellID).."驱散"..destName.."身上的"..GetSpellLink(extraSpellID).."，"..extra, "SAY", nil, nil)
+			SendChatMessage("用"..GetSpellLink(spellID).."驱散"..destName.."身上的"..GetSpellLink(extraSpellID).."，"..extra, "SAY", nil, nil)
 		end
 		
 	end 
